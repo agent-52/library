@@ -1,0 +1,28 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body{
+  display: grid;
+  grid-template-columns: 30vw 70vw;
+  grid-template-areas: "header header"
+  "nav main";
+}
+nav{
+  grid-area: nav;
+}
+main{
+  grid-area: main;
+}
+header{
+  grid-area: header;
+}
+.bookstore{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
