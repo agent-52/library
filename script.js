@@ -53,7 +53,7 @@ function showBook(){
   const div2 = document.createElement('div')
   div2.innerHTML = `<span>Genre:</span> ${genre}`
   const div3 = document.createElement('div')
-  div3.innerHTML = `<span>Current page:</span> ${page}`
+  div3.innerHTML = `<span>Current page:</span><input class="pageinput" value="${page}"/>`
   const completeButton = document.createElement('button')
   completeButton.classList.add("completeButton")
   completeButton.textContent = "Mark Complete"
