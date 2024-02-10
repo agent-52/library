@@ -5,88 +5,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abhay Library</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <script src="./script.js" defer></script>
 </head>
 <body>
   <header>
     <h1>Library Log</h1>
   </header>
   <nav>
-    <button>+</button>
-    <dialog>
+    <button class="addButton">+</button>
+    <dialog class="bookForm">
       <h2>Enter Your Book Details</h2>
       <form>
-        <div>
+        <div class="seprate">
           <label for="title">Title</label>
           <input type="text" id="title" placeholder="Title of the book">
         </div>
-        <div>
+        <div class="seprate">
           <label for="author">Author</label>
           <input type="text" id="author" placeholder="author of the book">
         </div>
-        <div>
+        <div class="seprate">
           <label for="genre">Genre</label>
-          <input type="text" id="genre" list="genre">
-          <datalist id="genre">
-            <option value="fantasy">Fantasy</option>
-            <option value="mystery">Mystrey</option>
-            <option value="thriller">Thriller</option>
-            <option value="fiction">Fiction</option>
-            <option value="romance">Romance</option>
-            <option value="horror">Horror</option>
-            <option value="historical">History</option>
-            <option value="si-fi">Sci-fi</option>
-            <option value="philosophy">Philosophy</option>
-            <option value="Biography">Biography</option>
+          <input type="text" id="genre" list="genrelist">
+          <datalist id="genrelist">
+            <option value="Fantasy"></option>
+            <option value="Mystery"></option>
+            <option value="Thriller"></option>
+            <option value="Fiction"></option>
+            <option value="Romance"></option>
+            <option value="Horror"></option>
+            <option value="Historical"></option>
+            <option value="si-fi"></option>
+            <option value="philosophy"></option>
+            <option value="Biography"></option>
 
           </datalist>
 
         </div>
-        <div>
-          <label for="pages">On which page no. of the book you are ?</label>
-          <input type="number" placeholder="pages you have read">
+        <div class="seprate">
+          <label for="pages">Pages read</label>
+          <input type="number" placeholder="pages you have read" id="pages">
         </div>
-        <button>Add Book</button>
-        
-
+        <div>
+          <button class="confirmAdd">Add Book</button>
+          <button class="cancelAdd" value="cancel" formmethod="dialog">Cancel</button>
+        </div>        
       </form>
+      <div class="errorMessage"></div>
     </dialog>
   </nav>
   <main>
     <div class="bookstore">
       <div class="bookcard">
         <h1>The Great Gatsby</h1>
-        <div>author: F.scott fitzgerald</div>
-        <div>Genre: Fantasy</div>
-        <div>Current page: 34</div>
+        <div><span>author:</span> F.scott fitzgerald</div>
+        <div><span>Genre:</span> Fantasy</div>
+        <div><span>Current page:</span> 34</div>
         <button></button>
       </div>
 
       <div class="bookcard">
         <h1>killery</h1>
-        <div>author: F.scott fitzgerald</div>
-        <div>Genre: Fantasy</div>
-        <div>Current page: 94</div>
+        <div><span>author:</span> F.scott fitzgerald</div>
+        <div><span>Genre:</span> Fantasy</div>
+        <div><span>Current page: </span> 94</div>
         <button></button>
       </div>
 
       <div class="bookcard">
         <h1>The Gatsby</h1>
-        <div>author: F.scott fitzgerald</div>
-        <div>Genre: Fantasy</div>
-        <div>Current page: 84</div>
+        <div><span>author:</span> F.scott fitzgerald</div>
+        <div><span>Genre:</span> Fantasy</div>
+        <div><span>Current page:</span> 84</div>
         <button></button>
       </div>
 
       <div class="bookcard">
         <h1> Great Gatsby</h1>
-        <div>author: F.scott fitzgerald</div>
-        <div>Genre: Fantasy</div>
-        <div>Current page: 30</div>
+        <div><span>author</span>: F.scott fitzgerald</div>
+        <div><span>Genre:</span> Fantasy</div>
+        <div><span>Curren</span>t page: 30</div>
         <button></button>
       </div>
     </div>
     
   </main>
+
+  
 </body>
 </html>
