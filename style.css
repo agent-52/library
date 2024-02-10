@@ -33,6 +33,7 @@ header{
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.8rem;
   margin-inline: 1rem;
+  margin-bottom: 1.5rem;
 
 }
 .bookcard{
@@ -138,6 +139,24 @@ dialog>h2{
   color: white;
   font-size: x-large;
   font-weight: bold;
+}
+
+.deleteButton{
+  background: rgb(237, 72, 72);
+  color: white;
+  border: none;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  border-radius: 1rem;
+}
+.completeButton{
+  background: green;
+  color: white;
+  font-weight: bolder;
+  border: none;
+  padding-inline: 1.5rem;
+  padding-block: 0.7rem;
+  border-radius: 1rem;
 }
 
 /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
